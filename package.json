@@ -1,3 +1,1 @@
-{"name": "ranimax",
-	"bin": "index.js",
-	"type":"module"}
+{"name":"ranimax","bin":"index.js","type":"module","dependencies":{"reejs":"latest"}}

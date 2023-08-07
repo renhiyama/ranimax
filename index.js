@@ -1,4 +1,4 @@
-//create anime downloader client
+#!/usr/bin/env -S reejs x
 import enquirer from "npm:enquirer@2.3.6";
 const { prompt, Select } = enquirer;
 import ora from "npm:ora@6.3.1";

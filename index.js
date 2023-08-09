@@ -27,7 +27,7 @@ const animeName = response.name;
 
 //we are going to use consumenet api to get anime.
 
-import { ANIME } from "npm:@consumet/extensions@1.4.18";
+import { ANIME } from "npm:@consumet/extensions@1.5.0";
 //ask user what provider to use
 response = new Select({
 	name: "provider",
@@ -36,9 +36,6 @@ response = new Select({
 });
 let provider = await response.run();
 const Anime = new ANIME[provider]();
-if (provider == "Gogoanime") {
-	Anime.client.defaults.baseURL = "https://gogoanime.hu";
-}
 let spinner = ora(gradient.instagram("Searching for anime...")).start();
 const { results } = await Anime.search(animeName);
 if (!results.length) {
